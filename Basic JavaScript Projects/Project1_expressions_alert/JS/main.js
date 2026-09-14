@@ -4,3 +4,5 @@ let myMessage = "This is my string value!";
 window.alert(myMessage);
 let quoteExample = "She said, \"JavaScript is fun!\" and I couldn't agree more.";
 window.alert(quoteExample);
+let firstName = "Joseph";
+document.write("Hello, " + firstName + "! Welcome to JavaScript.");
