@@ -6,3 +6,5 @@ let quoteExample = "She said, \"JavaScript is fun!\" and I couldn't agree more."
 window.alert(quoteExample);
 let firstName = "Joseph";
 document.write("Hello, " + firstName + "! Welcome to JavaScript.");
+let result = 5 + 3 * 2;
+document.write("<br>The result of the expression 5 + 3 * 2 is: " + result);
