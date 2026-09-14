@@ -1,1 +1,1 @@
-alert("Hello! This is my first JavaScript alert.");
+window.alert("Hello! This is my first JavaScript alert.");
