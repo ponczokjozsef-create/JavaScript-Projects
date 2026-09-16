@@ -59,4 +59,16 @@ function calculateIncrementDecrement() {
         Incremented value: ${incrementedValue}<br>
         Decremented value: ${decrementedValue}
     `;
+}// Function that demonstrates the Math.random() function and displays the results
+function calculateRandom() {
+    let randomValue = Math.random(); // Generates a random number between 0 (inclusive) and 1 (exclusive)
+    let randomBetween1And100 = Math.floor(Math.random() * 100) + 1; // Random whole number from 1 to 100
+
+    console.log("Random value (0-1): " + randomValue);
+    console.log("Random number (1-100): " + randomBetween1And100);
+
+    document.getElementById("Random").innerHTML = `
+        Random value (0-1): ${randomValue}<br>
+        Random number (1-100): ${randomBetween1And100}
+    `;
 }
