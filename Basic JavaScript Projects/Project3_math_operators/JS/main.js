@@ -41,3 +41,22 @@ function calculateNegation() {
         hasPermission: ${hasPermission} → Negated: ${isNegatedPermission}
     `;
 }
+// Function that demonstrates the increment (++) and decrement (--) operators and displays the results
+function calculateIncrementDecrement() {
+    let counter = 10;
+
+    counter++; // Increment operator increases the value by 1
+    let incrementedValue = counter;
+
+    counter--; // Decrement operator decreases the value by 1
+    counter--; // Decrement again to show a clear change
+    let decrementedValue = counter;
+
+    console.log("Incremented value: " + incrementedValue);
+    console.log("Decremented value: " + decrementedValue);
+
+    document.getElementById("IncrementDecrement").innerHTML = `
+        Incremented value: ${incrementedValue}<br>
+        Decremented value: ${decrementedValue}
+    `;
+}
