@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Menu</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    #menu {
+      width: 400px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 0;
+    }
+
+    .menu-item input {
+      width: 50px;
+    }
+
+    #orderSummary {
+      width: 400px;
+      margin: 20px auto;
+      text-align: left;
+      border-top: 2px solid #333;
+      padding-top: 10px;
+    }
+
+    #totalPrice {
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pizza Menu</h1>
+
+  <div id="menu">
+    <div class="menu-item">
+      <span>Margherita - $10</span>
+      <input type="number" id="qty0" value="0" min="0">
+    </div>
+    <div class="menu-item">
+      <span>Pepperoni - $12</span>
+      <input type="number" id="qty1" value="0" min="0">
+    </div>
+    <div class="menu-item">
+      <span>Hawaiian - $11</span>
+      <input type="number" id="qty2" value="0" min="0">
+    </div>
+    <div class="menu-item">
+      <span>Veggie - $9</span>
+      <input type="number" id="qty3" value="0" min="0">
+    </div>
+  </div>
+
+  <button onclick="calculateOrder()">Place Order</button>
+  <button onclick="resetOrder()">Reset</button>
+
+  <div id="orderSummary"></div>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
